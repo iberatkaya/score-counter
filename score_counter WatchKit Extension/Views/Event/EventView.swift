@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct EventView: View {
-    let event: Event
+    @StateObject var event: Event
     
     var body: some View {
         ScrollView {
@@ -9,7 +9,7 @@ struct EventView: View {
                 HStack {
                     Text(event.title).bold().font(Font.title2)
                 }
-                Underline(height: 2, color: .white).padding(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
+                Underline(height: 1, color: .white).padding(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
                 HStack {
                     VStack{
                         Text(event.firstPlayer.name).font(Font.title3)
@@ -21,29 +21,30 @@ struct EventView: View {
                     }
                 }
                 HStack {
-                    Text("\(event.firstPlayer.score)").bold().frame(maxWidth: .infinity)
-                    Text("\(event.secondPlayer.score)").bold().frame(maxWidth: .infinity)
+                    Text("\(event.firstPlayer.score)").font(Font.title3).bold().frame(maxWidth: .infinity)
+                    Text("\(event.secondPlayer.score)").font(Font.title3).bold().frame(maxWidth: .infinity)
                 }
                 HStack {
                     Button(action: {
-                        
+                        incrementPlayerScore(player: &event.firstPlayer, amount: 1)
                     }) {
                         Image(systemName: "plus")
                     }.frame(maxWidth: .infinity)
                     Button(action: {
-                        
+                        incrementPlayerScore(player: &event.secondPlayer, amount: 1)
                     }) {
                         Image(systemName: "plus")
                     }.frame(maxWidth: .infinity)
                 }
                 HStack {
                     Button(action: {
+                        decrementPlayerScore(player: &event.firstPlayer, amount: 1)
                         
                     }) {
                         Image(systemName: "minus")
                     }.frame(maxWidth: .infinity)
                     Button(action: {
-                        
+                        decrementPlayerScore(player: &event.secondPlayer, amount: 1)
                     }) {
                         Image(systemName: "minus")
                     }.frame(maxWidth: .infinity)

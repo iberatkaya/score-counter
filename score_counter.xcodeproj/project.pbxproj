@@ -21,6 +21,8 @@
 		FABEEE2725457D2E004DF2BC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEEE2625457D2E004DF2BC /* Event.swift */; };
 		FABEEE2F25457D8B004DF2BC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEEE2E25457D8B004DF2BC /* Player.swift */; };
 		FABEEE3725458315004DF2BC /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEEE3625458315004DF2BC /* EventRow.swift */; };
+		FACC42502546D35C003A964B /* ScoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC424F2546D35C003A964B /* ScoreError.swift */; };
+		FACC42572546DC30003A964B /* PlayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC42562546DC30003A964B /* PlayerUtil.swift */; };
 		FAD4AD0625458F3A00527BE8 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4AD0525458F3A00527BE8 /* EventView.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,8 @@
 		FABEEE2625457D2E004DF2BC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		FABEEE2E25457D8B004DF2BC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		FABEEE3625458315004DF2BC /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		FACC424F2546D35C003A964B /* ScoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreError.swift; sourceTree = "<group>"; };
+		FACC42562546DC30003A964B /* PlayerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerUtil.swift; sourceTree = "<group>"; };
 		FAD4AD0525458F3A00527BE8 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				FABEEE0425457C37004DF2BC /* score_counterApp.swift */,
+				FACC42542546DC1B003A964B /* Utils */,
 				FABEEE0625457C37004DF2BC /* ContentView.swift */,
 				FABEEE0825457C37004DF2BC /* NotificationController.swift */,
 				FABEEE2525457D1C004DF2BC /* Models */,
@@ -166,6 +171,7 @@
 			children = (
 				FABEEE2625457D2E004DF2BC /* Event.swift */,
 				FABEEE2E25457D8B004DF2BC /* Player.swift */,
+				FACC424F2546D35C003A964B /* ScoreError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +200,22 @@
 				FABEEE3625458315004DF2BC /* EventRow.swift */,
 			);
 			path = Row;
+			sourceTree = "<group>";
+		};
+		FACC42542546DC1B003A964B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FACC42552546DC24003A964B /* PlayerUtil */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FACC42552546DC24003A964B /* PlayerUtil */ = {
+			isa = PBXGroup;
+			children = (
+				FACC42562546DC30003A964B /* PlayerUtil.swift */,
+			);
+			path = PlayerUtil;
 			sourceTree = "<group>";
 		};
 		FAD4AD0425458F2800527BE8 /* Event */ = {
@@ -334,12 +356,14 @@
 				FAD4AD0625458F3A00527BE8 /* EventView.swift in Sources */,
 				FABEEE0725457C37004DF2BC /* ContentView.swift in Sources */,
 				FABEEE0D25457C37004DF2BC /* ComplicationController.swift in Sources */,
+				FACC42572546DC30003A964B /* PlayerUtil.swift in Sources */,
 				FA9FDEBC2545918F001E3B49 /* Underline.swift in Sources */,
 				FABEEE3725458315004DF2BC /* EventRow.swift in Sources */,
 				FABEEE0525457C37004DF2BC /* score_counterApp.swift in Sources */,
 				FABEEE2F25457D8B004DF2BC /* Player.swift in Sources */,
 				FABEEE2725457D2E004DF2BC /* Event.swift in Sources */,
 				FABEEE0B25457C37004DF2BC /* NotificationView.swift in Sources */,
+				FACC42502546D35C003A964B /* ScoreError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
