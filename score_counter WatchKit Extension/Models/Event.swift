@@ -1,6 +1,6 @@
 import SwiftUI
 
-class Event: ObservableObject {
+class Event: ObservableObject, Identifiable {
     @Published var title: String
     @Published var firstPlayer: Player
     @Published var secondPlayer: Player

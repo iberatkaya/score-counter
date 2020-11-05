@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F43F0F1D2554163F005CF294 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F0F1C2554163F005CF294 /* EventList.swift */; };
 		FA9FDEBC2545918F001E3B49 /* Underline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FDEBB2545918F001E3B49 /* Underline.swift */; };
 		FABEEDF425457C36004DF2BC /* score_counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FABEEDF325457C36004DF2BC /* score_counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FABEEDF925457C37004DF2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABEEDF825457C37004DF2BC /* Assets.xcassets */; };
@@ -69,8 +70,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F43F0F1C2554163F005CF294 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		FA9FDEBB2545918F001E3B49 /* Underline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Underline.swift; sourceTree = "<group>"; };
-		FABEEDEF25457C36004DF2BC /* score_counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = score_counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABEEDEF25457C36004DF2BC /* Score Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Score Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABEEDF325457C36004DF2BC /* score_counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "score_counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABEEDF825457C37004DF2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABEEDFA25457C37004DF2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,7 +125,7 @@
 		FABEEDF025457C36004DF2BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FABEEDEF25457C36004DF2BC /* score_counter.app */,
+				FABEEDEF25457C36004DF2BC /* Score Counter.app */,
 				FABEEDF325457C36004DF2BC /* score_counter WatchKit App.app */,
 				FABEEDFF25457C37004DF2BC /* score_counter WatchKit Extension.appex */,
 			);
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				FABEEE3525458305004DF2BC /* Row */,
+				F43F0F1C2554163F005CF294 /* EventList.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -243,7 +246,7 @@
 			);
 			name = score_counter;
 			productName = score_counter;
-			productReference = FABEEDEF25457C36004DF2BC /* score_counter.app */;
+			productReference = FABEEDEF25457C36004DF2BC /* Score Counter.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		FABEEDF225457C36004DF2BC /* score_counter WatchKit App */ = {
@@ -359,6 +362,7 @@
 				FACC42572546DC30003A964B /* PlayerUtil.swift in Sources */,
 				FA9FDEBC2545918F001E3B49 /* Underline.swift in Sources */,
 				FABEEE3725458315004DF2BC /* EventRow.swift in Sources */,
+				F43F0F1D2554163F005CF294 /* EventList.swift in Sources */,
 				FABEEE0525457C37004DF2BC /* score_counterApp.swift in Sources */,
 				FABEEE2F25457D8B004DF2BC /* Player.swift in Sources */,
 				FABEEE2725457D2E004DF2BC /* Event.swift in Sources */,
@@ -602,7 +606,7 @@
 				DEVELOPMENT_TEAM = QH78WN2XWN;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.score-counter";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Score Counter";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -616,7 +620,7 @@
 				DEVELOPMENT_TEAM = QH78WN2XWN;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.score-counter";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Score Counter";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

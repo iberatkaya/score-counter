@@ -1,13 +1,22 @@
 import SwiftUI
 
 struct EventRow: View {
+    var event: Event
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            NavigationLink(
+                destination: EventView(event: event)
+                ) {
+                VStack{
+                    Text(event.title).bold()
+                    Text("\(event.firstPlayer.score) - \(event.secondPlayer.score)")
+                }
+            }
+        
     }
 }
 
 struct EventRow_Previews: PreviewProvider {
     static var previews: some View {
-        EventRow()
+        EventRow(event: Event(title: "Soccer Game", firstPlayer: Player(name: "John", score: 3), secondPlayer: Player(name: "Mike", score: 4)))
     }
 }
