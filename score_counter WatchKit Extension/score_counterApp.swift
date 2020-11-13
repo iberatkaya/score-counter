@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct score_counterApp: App {
+    @StateObject var eventsModel: EventsModel = EventsModel()
+    
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ContentView().environmentObject(eventsModel)
             }
         }
 
