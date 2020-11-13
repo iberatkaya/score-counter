@@ -4,7 +4,7 @@
 
 
 <p align="center">
-    <img alt="Example Video" src="https://raw.githubusercontent.com/iberatkaya/score-counter/master/images/example.gif" width="355" height="381">
+    <img alt="Example Video" src="https://raw.githubusercontent.com/iberatkaya/score-counter/master/images/example.gif" width="273" height="297">
 </p>
 
 ## Authors
