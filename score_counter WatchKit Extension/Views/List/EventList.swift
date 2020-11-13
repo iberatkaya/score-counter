@@ -8,20 +8,24 @@
 import SwiftUI
 
 struct EventList: View {
-    var events: [Event]
+    @ObservedObject var eventsModel: EventsModel
     var body: some View {
-        List(events) { event in
-            HStack {    
-                Spacer()
-                EventRow(event: event)
-                Spacer()
-            }
+        List {
+            ForEach(eventsModel.events.reversed()) { event in
+                HStack {
+                    Spacer()
+                    EventRow(event: event)
+                    Spacer()
+                }
+            }.onDelete(perform: { indexSet in
+                eventsModel.deleteAtOffsets(offset: indexSet)
+            })
         }
     }
 }
 
 struct EventList_Previews: PreviewProvider {
     static var previews: some View {
-        EventList(events: [Event(title: "Test", firstPlayer: Player(name: "James", score: 5), secondPlayer: Player(name: "Mike", score: 2)),Event(title: "Test 2", firstPlayer: Player(name: "John", score: 1), secondPlayer: Player(name: "Joe", score: 2))])
+        EventList(eventsModel: EventsModel())
     }
 }

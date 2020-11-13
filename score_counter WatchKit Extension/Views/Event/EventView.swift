@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct EventView: View {
-    @StateObject var event: Event
+    @ObservedObject var event: Event
+    @EnvironmentObject var eventsModel: EventsModel
     
     var body: some View {
         ScrollView {
@@ -26,25 +27,29 @@ struct EventView: View {
                 }
                 HStack {
                     Button(action: {
-                        incrementPlayerScore(player: &event.firstPlayer, amount: 1)
+                        event.incrementPlayerScore(playerNumber: event.firstPlayer.playerNumber, amount: 1)
+                        eventsModel.updateEvent(event: event)
                     }) {
                         Image(systemName: "plus")
                     }.frame(maxWidth: .infinity)
                     Button(action: {
-                        incrementPlayerScore(player: &event.secondPlayer, amount: 1)
+                        event.incrementPlayerScore(playerNumber: event.secondPlayer.playerNumber, amount: 1)
+                        eventsModel.updateEvent(event: event)
                     }) {
                         Image(systemName: "plus")
                     }.frame(maxWidth: .infinity)
                 }
                 HStack {
                     Button(action: {
-                        decrementPlayerScore(player: &event.firstPlayer, amount: 1)
+                        event.decrementPlayerScore(playerNumber: event.firstPlayer.playerNumber, amount: 1)
+                        eventsModel.updateEvent(event: event)
                         
                     }) {
                         Image(systemName: "minus")
                     }.frame(maxWidth: .infinity)
                     Button(action: {
-                        decrementPlayerScore(player: &event.secondPlayer, amount: 1)
+                        event.decrementPlayerScore(playerNumber: event.secondPlayer.playerNumber, amount: 1)
+                        eventsModel.updateEvent(event: event)
                     }) {
                         Image(systemName: "minus")
                     }.frame(maxWidth: .infinity)
@@ -56,6 +61,6 @@ struct EventView: View {
 
 struct EventView_Previews: PreviewProvider {
     static var previews: some View {
-        EventView(event: Event(title: "Test", firstPlayer: Player(name: "James", score: 5), secondPlayer: Player(name: "Mike", score: 2)))
+        EventView(event: Event(title: "Test", firstPlayer: Player(name: "James", score: 5, playerNumber: 1), secondPlayer: Player(name: "Mike", score: 2, playerNumber: 2)))
     }
 }
