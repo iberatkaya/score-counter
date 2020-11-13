@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var eventsModel: EventsModel
+    
     var body: some View {
-        EventList(events: [Event(title: "Test", firstPlayer: Player(name: "James", score: 5), secondPlayer: Player(name: "Mike", score: 2)), Event(title: "Test 2", firstPlayer: Player(name: "John", score: 1), secondPlayer: Player(name: "Joe", score: 2)),Event(title: "Test 2", firstPlayer: Player(name: "Jimmy", score: 4), secondPlayer: Player(name: "Jeremy", score: 3))])
+        VStack {
+            NavigationLink(
+                destination: CreateEvent(eventsModel: eventsModel)
+                ) {
+                    HStack {
+                        Text("Create Event")
+                    }
+            }
+            EventList(eventsModel: eventsModel)
+        }
     }
 }
 
