@@ -2,6 +2,11 @@
 
 > Score Counter is an Apple Watch App developed with Swift and SwiftUI. It lets users track the score of games with two players/teams such as soccer or basketball.
 
+
+<p align="center">
+    <img alt="Example Video" src="https://raw.githubusercontent.com/iberatkaya/score-counter/master/images/example.gif" width="355" height="381">
+</p>
+
 ## Authors
 
 👤 **Ibrahim Berat Kaya**
