@@ -20,14 +20,16 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>CLKComplicationPrincipalClass</key>
+	<!-- Complications are temporarily removed
+	<key>CLKComplicationPrincipalClass</key>	
 	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
+	-->
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>com.kaya.score-counter.watchkitapp</string>
+			<string>com.kaya.scorecounter.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
