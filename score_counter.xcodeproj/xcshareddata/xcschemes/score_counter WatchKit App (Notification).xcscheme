@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FABEEDEE25457C36004DF2BC"
-               BuildableName = "score_counter.app"
+               BuildableName = "Score Counter.app"
                BlueprintName = "score_counter"
                ReferencedContainer = "container:score_counter.xcodeproj">
             </BuildableReference>
@@ -56,8 +56,10 @@
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "8"
       notificationPayloadFile = "score_counter WatchKit Extension/PushNotificationPayload.apns">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Score Counter">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FABEEDF225457C36004DF2BC"
@@ -65,7 +67,7 @@
             BlueprintName = "score_counter WatchKit App"
             ReferencedContainer = "container:score_counter.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -75,8 +77,10 @@
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "8"
       notificationPayloadFile = "score_counter WatchKit Extension/PushNotificationPayload.apns">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Score Counter">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FABEEDF225457C36004DF2BC"
@@ -84,7 +88,16 @@
             BlueprintName = "score_counter WatchKit App"
             ReferencedContainer = "container:score_counter.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FABEEDF225457C36004DF2BC"
+            BuildableName = "score_counter WatchKit App.app"
+            BlueprintName = "score_counter WatchKit App"
+            ReferencedContainer = "container:score_counter.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

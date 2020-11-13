@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F42A090A255D34B200A9B3F6 /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A0909255D34B200A9B3F6 /* CreateEvent.swift */; };
 		F43F0F1D2554163F005CF294 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F0F1C2554163F005CF294 /* EventList.swift */; };
+		F4E1E14925584AEC007DEA79 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1E14825584AEC007DEA79 /* Events.swift */; };
 		FA9FDEBC2545918F001E3B49 /* Underline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FDEBB2545918F001E3B49 /* Underline.swift */; };
 		FABEEDF425457C36004DF2BC /* score_counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FABEEDF325457C36004DF2BC /* score_counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FABEEDF925457C37004DF2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABEEDF825457C37004DF2BC /* Assets.xcassets */; };
@@ -23,7 +25,6 @@
 		FABEEE2F25457D8B004DF2BC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEEE2E25457D8B004DF2BC /* Player.swift */; };
 		FABEEE3725458315004DF2BC /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEEE3625458315004DF2BC /* EventRow.swift */; };
 		FACC42502546D35C003A964B /* ScoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC424F2546D35C003A964B /* ScoreError.swift */; };
-		FACC42572546DC30003A964B /* PlayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC42562546DC30003A964B /* PlayerUtil.swift */; };
 		FAD4AD0625458F3A00527BE8 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4AD0525458F3A00527BE8 /* EventView.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +71,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F42A0909255D34B200A9B3F6 /* CreateEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEvent.swift; sourceTree = "<group>"; };
 		F43F0F1C2554163F005CF294 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		F4E1E14825584AEC007DEA79 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		FA9FDEBB2545918F001E3B49 /* Underline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Underline.swift; sourceTree = "<group>"; };
 		FABEEDEF25457C36004DF2BC /* Score Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Score Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABEEDF325457C36004DF2BC /* score_counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "score_counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +93,6 @@
 		FABEEE2E25457D8B004DF2BC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		FABEEE3625458315004DF2BC /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 		FACC424F2546D35C003A964B /* ScoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreError.swift; sourceTree = "<group>"; };
-		FACC42562546DC30003A964B /* PlayerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerUtil.swift; sourceTree = "<group>"; };
 		FAD4AD0525458F3A00527BE8 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 				FABEEE2625457D2E004DF2BC /* Event.swift */,
 				FABEEE2E25457D8B004DF2BC /* Player.swift */,
 				FACC424F2546D35C003A964B /* ScoreError.swift */,
+				F4E1E14825584AEC007DEA79 /* Events.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,23 +211,15 @@
 		FACC42542546DC1B003A964B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				FACC42552546DC24003A964B /* PlayerUtil */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		FACC42552546DC24003A964B /* PlayerUtil */ = {
-			isa = PBXGroup;
-			children = (
-				FACC42562546DC30003A964B /* PlayerUtil.swift */,
-			);
-			path = PlayerUtil;
 			sourceTree = "<group>";
 		};
 		FAD4AD0425458F2800527BE8 /* Event */ = {
 			isa = PBXGroup;
 			children = (
 				FAD4AD0525458F3A00527BE8 /* EventView.swift */,
+				F42A0909255D34B200A9B3F6 /* CreateEvent.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -357,9 +352,10 @@
 			files = (
 				FABEEE0925457C37004DF2BC /* NotificationController.swift in Sources */,
 				FAD4AD0625458F3A00527BE8 /* EventView.swift in Sources */,
+				F42A090A255D34B200A9B3F6 /* CreateEvent.swift in Sources */,
 				FABEEE0725457C37004DF2BC /* ContentView.swift in Sources */,
 				FABEEE0D25457C37004DF2BC /* ComplicationController.swift in Sources */,
-				FACC42572546DC30003A964B /* PlayerUtil.swift in Sources */,
+				F4E1E14925584AEC007DEA79 /* Events.swift in Sources */,
 				FA9FDEBC2545918F001E3B49 /* Underline.swift in Sources */,
 				FABEEE3725458315004DF2BC /* EventRow.swift in Sources */,
 				F43F0F1D2554163F005CF294 /* EventList.swift in Sources */,
@@ -520,7 +516,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.score-counter.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.scorecounter.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -545,7 +541,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.score-counter.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.scorecounter.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -566,7 +562,7 @@
 				DEVELOPMENT_TEAM = QH78WN2XWN;
 				IBSC_MODULE = score_counter_WatchKit_Extension;
 				INFOPLIST_FILE = "score_counter WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.score-counter.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.scorecounter.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -587,7 +583,7 @@
 				DEVELOPMENT_TEAM = QH78WN2XWN;
 				IBSC_MODULE = score_counter_WatchKit_Extension;
 				INFOPLIST_FILE = "score_counter WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.score-counter.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.scorecounter.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -605,7 +601,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QH78WN2XWN;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.score-counter";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.scorecounter";
 				PRODUCT_NAME = "Score Counter";
 				SWIFT_VERSION = 5.0;
 			};
@@ -619,7 +615,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QH78WN2XWN;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.score-counter";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaya.scorecounter";
 				PRODUCT_NAME = "Score Counter";
 				SWIFT_VERSION = 5.0;
 			};
