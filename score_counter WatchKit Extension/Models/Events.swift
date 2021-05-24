@@ -36,6 +36,10 @@ class EventsModel: ObservableObject, Identifiable, Codable {
         events.remove(atOffsets: offset)
     }
     
+    func deleteAtIndex(index: Int){
+        events.remove(at: index)
+    }
+    
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         events = try values.decode([Event].self, forKey: .events)

@@ -18,7 +18,12 @@ struct EventList: View {
                     Spacer()
                 }
             }.onDelete(perform: { indexSet in
-                eventsModel.deleteAtOffsets(offset: indexSet)
+                indexSet.forEach { i in
+                    //Since the list is reversed,
+                    //the index is length(arr) - i - 1
+                    let j = (eventsModel.events.count - 1) - i
+                    eventsModel.deleteAtIndex(index: j)
+                }
             })
         }
     }
